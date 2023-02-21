@@ -100,7 +100,7 @@ export default {
       showCSuite: false,
       designation: "FRONTENDDEVELOPER",
       aboutme:
-        "I'm a frontend developer based in India. I've worked with vue and reactjs to build numerous webapps like social media website and so on",
+        "I'm a front-end developer, and my area of expertise is designing stunning and simple user interfaces that bring websites and applications to life.",
     };
   },
   methods: {
