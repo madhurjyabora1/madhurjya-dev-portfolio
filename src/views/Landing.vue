@@ -224,4 +224,8 @@ export default {
   font-size: 18px;
   margin-top: -4px
 }
+
+a {
+  text-decoration: none
+}
 </style>
