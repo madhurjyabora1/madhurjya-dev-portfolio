@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import pic from '@/assets/me.jpg'
+import pic from 'https://res.cloudinary.com/dq0ah9hmq/image/upload/v1676985695/me_i8aiis.jpg'
 export default {
   data(){
     return{
