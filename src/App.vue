@@ -11,7 +11,7 @@
           width="180"
         /> -->
         <div class="logo-font-nav logo-top">
-          Madhurjya Bora
+          MB
         </div>
       </router-link>
       <v-divider></v-divider>
@@ -44,7 +44,7 @@
             width="230"
           /> -->
           <div class="logo-font" :class="{ 'new-color': scrollPosition > 50 && scrollPosition<340 }">
-            Madhurjya Bora
+            MB
           </div>
         </router-link>
 
@@ -117,31 +117,33 @@ export default {
 };
 </script>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
 .logo-top {
   margin-top: 10px !important;
   margin-bottom: 3px;
   margin-left: 12px;
 }
 .logo-font {
-  font-family: "Kaushan Script", cursive;
+  font-family: 'Nabla', cursive;
   color: black;
   font-size: 35px;
   text-decoration: none;
 }
 .logo-mid {
-  font-family: "Kaushan Script", cursive;
+  font-family: 'Nabla', cursive;
   color: red;
   font-size: 35px;
   text-decoration: none;
 }
 .logo-mid-nav {
-  font-family: "Kaushan Script", cursive;
+  font-family: 'Nabla', cursive;
   color: red;
   font-size: 28px;
   text-decoration: none;
 }
 .logo-font-nav {
-  font-family: "Kaushan Script", cursive;
+  font-family: 'Nabla', cursive;
   color: black;
   font-size: 28px;
   text-decoration: none;

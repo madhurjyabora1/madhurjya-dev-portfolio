@@ -2,21 +2,22 @@
     <v-container class="about-section">
         <v-row class="d-md-flex">
             <v-col cols="12" sm="12" md="4">
-                <div class="d-flex flex-start">Experience</div>
+                <div class="d-flex flex-start font-weight-bold">Experience</div>
             </v-col>
             <v-col cols="12" sm="12" md="8">
                 <v-row>
                     <v-col v-for="item in experience" :key="item.name" cols="12" sm="12" md="6">
-                        <v-card class="card-class" elevation="1">
-                            <v-card-text class="d-flex flex-row px-3 py-5">
-                                <v-avatar size="93" class="mr-2">
-                                    <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John">
+                        <v-card class="card-class" elevation="0" outlined>
+                            <v-card-text class="d-flex flex-row px-3 py-3">
+                                <v-avatar size="53" class="mr-2">
+                                    <img :src="item.logo" alt="John">
                                 </v-avatar>
                                 <div class="d-flex flex-column">
-                                    <div>Full Stack Developer</div>
-                                    <div>C-Suite Circle</div>
+                                    <h3 class="font-weight-bold">{{item.designation}}</h3>
+                                    <div>{{item.company}}</div>
                                 </div>
                             </v-card-text>
+                            <v-card-text>{{ item.time }}</v-card-text>
                             <v-divider></v-divider>
                             <v-card-actions>
                                 <v-spacer></v-spacer>
@@ -45,7 +46,10 @@
         </v-row>
     </v-container>
 </template>
+
 <script>
+import instoried from '@/assets/instoried.jpg';
+import csuite from '@/assets/csuite.png';
 export default {
     data() {
         return {
@@ -54,15 +58,17 @@ export default {
             experience: [{
                 company: 'C-Suite Circle',
                 designation: "Full-Stack Developer",
-                logo: "https://cdn.vuetifyjs.com/images/john.jpg",
+                logo: csuite,
                 show: false,
+                time: 'Aug, 2020 - Present',
                 cardText: "hasodfhaldk"
             },
             {
                 company: 'Instoried',
                 designation: "Front end Developer",
-                logo: "https://cdn.vuetifyjs.com/images/john.jpg",
+                logo: instoried,
                 show: false,
+                time: 'Sept, 2019 - Aug, 2020',
                 cardText: "asdfiosjdaf"
             }],
             isOpen: [],

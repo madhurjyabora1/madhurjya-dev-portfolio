@@ -1,10 +1,15 @@
 <template>
-  <div class="profile-pic"><img src="https://picsum.photos/300/300" class="image-class"></div>
+  <div class="profile-pic"><img :src="pic" class="image-class"></div>
 </template>
 
 <script>
+import pic from '@/assets/me.jpg'
 export default {
-
+  data(){
+    return{
+      pic
+    }
+  }
 }
 </script>
 
