@@ -48,8 +48,6 @@
 </template>
 
 <script>
-import instoried from '@/assets/instoried.jpg';
-import csuite from '@/assets/csuite.png';
 export default {
     data() {
         return {
@@ -58,7 +56,7 @@ export default {
             experience: [{
                 company: 'C-Suite Circle',
                 designation: "Full-Stack Developer",
-                logo: csuite,
+                logo: 'https://res.cloudinary.com/dq0ah9hmq/image/upload/v1676985989/csuite_lrdmnq.png',
                 show: false,
                 time: 'Aug, 2020 - Present',
                 cardText: "hasodfhaldk"
@@ -66,21 +64,13 @@ export default {
             {
                 company: 'Instoried',
                 designation: "Front end Developer",
-                logo: instoried,
+                logo: 'https://res.cloudinary.com/dq0ah9hmq/image/upload/v1676985988/instoried_itleva.jpg',
                 show: false,
                 time: 'Sept, 2019 - Aug, 2020',
                 cardText: "asdfiosjdaf"
             }],
-            isOpen: [],
         };
     },
-    methods: {
-        toggleOpen(i) {
-            const index = this.isOpen.findIndex(x => x === i)
-            if (index !== -1) this.isOpen.splice(index, 1)
-            else this.isOpen.push(i)
-        }
-    }
 }
 </script>
 
