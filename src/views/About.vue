@@ -48,12 +48,11 @@
                         others
                         who
                         share similar interests, so feel free to reach out!
-                        <v-btn href="mailto:mrbora10@gmail.com" tile
-                        target="_blank" rel="noopener noreferrer" elevation="1" 
-                        small>Email Me<v-icon right>
-        mdi-pencil
-      </v-icon></v-btn>
-                </p>
+                        <v-btn href="mailto:mrbora10@gmail.com" tile target="_blank" rel="noopener noreferrer" elevation="1"
+                            small>Email Me<v-icon right>
+                                mdi-pencil
+                            </v-icon></v-btn>
+                    </p>
                 </v-col>
             </v-row>
         </v-container>
@@ -79,4 +78,5 @@
             #e524e5);
     display: grid;
     place-items: center;
-}</style>
+}
+</style>
