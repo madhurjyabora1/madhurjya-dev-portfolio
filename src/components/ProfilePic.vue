@@ -1,13 +1,14 @@
 <template>
-  <div class="profile-pic"><img :src="pic" class="image-class"></div>
+  <div class="profile-pic"><img src="https://res.cloudinary.com/dq0ah9hmq/image/upload/v1676985695/me_i8aiis.jpg" class="image-class">
+  </div>
 </template>
 
 <script>
-import pic from 'https://res.cloudinary.com/dq0ah9hmq/image/upload/v1676985695/me_i8aiis.jpg'
+
 export default {
   data(){
     return{
-      pic
+
     }
   }
 }
