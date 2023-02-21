@@ -19,7 +19,7 @@
             <v-col cols="12" sm="12" md="6">
             <div class="name-info">
               <app-profile-pic />
-              <div class="d-flex flex-column mx-4 my-7">
+              <div class="bio">
                 <div>Madhurjya Bora</div>
                 <div>I'm from assam</div>
               </div>
@@ -27,7 +27,8 @@
           </v-col>
           <v-spacer></v-spacer>
           <v-col class="" cols="12" sm="12" md="6">
-            <div class="d-flex my-7 justify-end"><v-btn depressed>Follow</v-btn></div>
+            <div class="d-sm-flex d-md-none justify-start"><v-btn depressed>Follow</v-btn></div>
+          <div class="d-none d-md-flex  my-7 justify-end"><v-btn depressed>Follow</v-btn></div>
           </v-col>
           <!-- </div> -->
         </v-row>
@@ -166,10 +167,27 @@ export default {
   display: flex;
   flex-direction: row;
 }
+.bio{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 10px
+}
 .main-row {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+@media (max-width: 480px) {
+
+  .name-info {
+  display: flex;
+  flex-direction: column;
+}
+.bio{
+  margin-top: 15px;
+  margin-left: 0px
+}
 }
 .about-section {
   border-top: 1px solid #e6eaea;

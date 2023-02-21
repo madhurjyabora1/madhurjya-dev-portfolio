@@ -14,7 +14,6 @@ export default {
     width: 200px;
     border-radius: 50%;
     background: white;
-    /* border: 1px solid black; */
     margin-top: -35px;
     position: relative;
 }
@@ -26,5 +25,21 @@ export default {
     top: calc(50% - (190px / 2)); 
     left: calc(50% - (190px / 2)); 
     margin: 0 auto;
+}
+@media (max-width: 480px) {
+  .image-class{
+    height: 185px;
+    width: 185px;
+    top: calc(50% - (185px / 2)); 
+    left: calc(50% - (185px / 2)); 
+}
+.profile-pic{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: white;
+    margin-top: -45px;
+    position: relative;
+} 
 }
 </style>
