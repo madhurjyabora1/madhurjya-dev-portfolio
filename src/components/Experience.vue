@@ -30,12 +30,9 @@
                             <v-expand-transition>
                                 <div v-show="item.show">
                                     <v-card-text>
-                                        I'm a thing. But, like most politicians, he promised
-                                        more than he could deliver. You won't have time for
-                                        sleeping, soldier, not with all the bed making you'll be
-                                        doing. Then we'll go with that data file! Hey, you add a
-                                        one and two zeros to that or we walk! You're going to do
-                                        his laundry? I've got to find a way to escape.
+                                        <ul v-for="point in item.cardText" :key="point">
+                                            <li>{{point}}</li>
+                                        </ul>
                                     </v-card-text>
                                 </div>
                             </v-expand-transition>
@@ -59,7 +56,16 @@ export default {
                 logo: 'https://res.cloudinary.com/dq0ah9hmq/image/upload/v1676985989/csuite_lrdmnq.png',
                 show: false,
                 time: 'Aug, 2020 - Present',
-                cardText: "hasodfhaldk"
+                cardText: [
+                    "Developed mobile and desktop versions of social media website which has over million active users using vuejs and graphql.",
+                    "Worked on an ecommerce website and made new features for their dashboard and internal tools using vuejs and vuex",
+                    "Designed and developed components using Storybook for an in- house UI library to use in all the organization projects",
+                    "Documented the components of the UI library in Zeroheight.",
+                    "Helped build a dashboard for the organization’s cloud products",
+                    "Wrote queries and mutations in typegraphql for a static site service in AWS S3",
+                    "Developed landing page in nuxt",
+                    "Technology stack: Vuejs, Vue-router, Vuex, Nuxt, Graphql,Typegraphql, Apollo, Storybook"
+                ]
             },
             {
                 company: 'Instoried',
@@ -67,7 +73,12 @@ export default {
                 logo: 'https://res.cloudinary.com/dq0ah9hmq/image/upload/v1676985988/instoried_itleva.jpg',
                 show: false,
                 time: 'Sept, 2019 - Aug, 2020',
-                cardText: "asdfiosjdaf"
+                cardText: [
+                    "Worked as a frontend developer and help develop two webapps.",
+                    "Designed and developed the chrome extension.",
+                    "Implemented secure user authorization.",
+                    "Technology stack: React.js, React-Router, Material-UI, Styled Component, D3.js."
+                ]
             }],
         };
     },
