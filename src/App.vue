@@ -77,21 +77,18 @@
 </template>
 
 <script>
-const logo = require("@/assets/logo.png");
 export default {
   name: "App",
 
   data: () => ({
     //
     sidebar: false,
-    logo,
     elevateNumber: 2,
     scrollPosition: null,
     dynamicColor: "white",
     menuItems: [
       { title: "Home", path: "/" },
       { title: "About", path: "/about" },
-      { title: "Form", path: "/form" },
     ],
   }),
   methods: {

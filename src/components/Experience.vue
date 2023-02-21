@@ -2,7 +2,7 @@
     <v-container class="about-section">
         <v-row class="d-md-flex">
             <v-col cols="12" sm="12" md="4">
-                <div class="d-flex flex-start font-weight-bold">Experience</div>
+                <div class="d-flex flex-start font-weight-bold">Work Experience</div>
             </v-col>
             <v-col cols="12" sm="12" md="8">
                 <v-row>

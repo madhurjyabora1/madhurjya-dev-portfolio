@@ -8,7 +8,7 @@
                 <v-row>
                     <v-col v-for="item in projects" :key="item.name" cols="12" sm="12" md="6">
                         <v-card elevation="0" outlined>
-                            <v-img :src="item.src" class="white--text align-end img-class" height="250px"
+                            <v-img :src="item.src" class="white--text align-end img-class" height="228px"
                                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
                                 <v-card-title>{{ item.name }}</v-card-title>
                             </v-img>
