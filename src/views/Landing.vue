@@ -2,9 +2,10 @@
   <v-container fluid>
     <v-row class=" d-md-flex">
       <div class="gradient">
-        <div class="text text-center" :data-value="designation" @mouseover="randomLetters" @mouseleave="changeBack">
+        <!-- <div class="text text-center" :data-value="designation" @mouseover="randomLetters" @mouseleave="changeBack">
           {{ designation }}
-        </div>
+        </div> -->
+        <app-horizontal-spinning-text/>
       </div>
     </v-row>
     <v-container>
@@ -83,13 +84,15 @@ import AppExperience from '@/components/Experience.vue'
 import AppProject from '@/components/Project.vue'
 import AppSkills from '@/components/Skills.vue'
 import AppCertifications from '@/components/Certifications.vue'
+import AppHorizontalSpinningText from '@/components/HorizontalSpinningText.vue'
 export default {
   components: {
     AppProfilePic,
     AppExperience,
     AppProject,
     AppSkills,
-    AppCertifications
+    AppCertifications,
+    AppHorizontalSpinningText
   },
   data() {
     return {
