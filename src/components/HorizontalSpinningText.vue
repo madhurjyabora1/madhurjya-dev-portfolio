@@ -3,7 +3,7 @@
     <div class="text-wrapper">
       <p>FRONTEND DEVELOPER</p>
       <p>BACKEND DEVELOPER</p>
-      <p>FULLSTACKD DEVELOPER</p>
+      <p>FULLSTACK DEVELOPER</p>
     </div>
   </div>
 </template>
@@ -13,35 +13,45 @@ import gsap from "gsap";
 import SplitTextJS from "split-text-js";
 export default {
   mounted() {
-    // setInterval(this.animateText, 3000)
     this.animateText();
   },
   methods: {
     animateText() {
       const titles = gsap.utils.toArray("p");
-      const tl = gsap.timeline({repeat: -1,});
-      titles.forEach((title) => {
-        const splitTitle = new SplitTextJS(title);
-        tl.from(
-          splitTitle.chars,
-          {
-            opacity: 0,
-            y: 80,
-            rotateX: -90,
-            stagger: 0.02,
-          },
-          "<"
-        ).to(
-          splitTitle.chars,
-          {
-            opacity: 0,
-            y: -80,
-            rotateX: 90,
-            stagger: 0.02,
-          },
-          "<1"
-        );
-      });
+      let mm = gsap.matchMedia();
+
+      mm.add(
+        {
+          isMobile: "(max-width: 480px)",
+          isDesktop: "(min-width: 481px)",
+        },
+        (context) => {
+          let { isMobile} = context.conditions;
+          const tl = gsap.timeline({ repeat: -1 });
+          titles.forEach((title) => {
+            const splitTitle = new SplitTextJS(title);
+            tl.from(
+              splitTitle.chars,
+              {
+                opacity: 0,
+                y: isMobile ? 15 : 40,
+                rotateX: -90,
+                stagger: 0.02,
+              },
+              "<"
+            ).to(
+              splitTitle.chars,
+              {
+                opacity: 0,
+                y: isMobile ? -15 : -40,
+                rotateX: 90,
+                stagger: 0.02,
+              },
+              "<1"
+            );
+          });
+        }
+      );
     },
   },
 };
@@ -60,8 +70,8 @@ p:nth-of-type(3) {
 }
 
 @media (max-width: 480px) {
-    p{
-        font-size: 1rem;
-    }
+  p {
+    font-size: 1rem;
+  }
 }
 </style>
