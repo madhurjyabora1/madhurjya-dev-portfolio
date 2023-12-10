@@ -98,7 +98,7 @@ export default {
     return {
       letters: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
       interval: null,
-      resume: 'https://res.cloudinary.com/dq0ah9hmq/image/upload/v1676984686/madhurjya_resume_cuycmm.pdf',
+      resume: 'http://res.cloudinary.com/dq0ah9hmq/image/upload/v1702218773/omljvqd6woygihx9l6kq.pdf',
       showInstoried: false,
       showCSuite: false,
       designation: "FRONTENDDEVELOPER",
