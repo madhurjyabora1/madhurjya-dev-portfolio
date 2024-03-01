@@ -32,9 +32,9 @@ export default {
     data() {
         return {
             projects: [{
-                src: 'https://res.cloudinary.com/dq0ah9hmq/image/upload/v1676985992/web2_j2y8zc.png',
-                name: 'Brand n Fame',
-                link: 'https://brandnfame.com'
+                src: 'https://res.cloudinary.com/dq0ah9hmq/image/upload/v1709316947/website_admfyy.png',
+                name: 'Crybabyst4re',
+                link: 'https://crybabyst4re.com'
             },
             {
                 src: 'https://res.cloudinary.com/dq0ah9hmq/image/upload/v1676986003/web1_yd3fmm.png',
