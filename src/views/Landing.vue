@@ -22,9 +22,9 @@
         </v-col>
         <v-spacer></v-spacer>
         <v-col class="" cols="12" sm="12" md="6">
-          <div class="d-sm-flex d-md-none justify-start"><v-btn depressed :href="resume" target="_blank"
+          <div class="d-sm-flex d-md-none justify-start"><v-btn depressed href="/resume.pdf" target="_blank"
               rel="noopener noreferrer">Resume</v-btn></div>
-          <div class="d-none d-md-flex  my-7 justify-end"><v-btn depressed :href="resume" target="_blank"
+          <div class="d-none d-md-flex  my-7 justify-end"><v-btn depressed href="/resume.pdf" target="_blank"
               rel="noopener noreferrer">Resume</v-btn></div>
         </v-col>
         <!-- </div> -->
@@ -85,7 +85,6 @@ import AppProject from '@/components/Project.vue'
 import AppSkills from '@/components/Skills.vue'
 import AppCertifications from '@/components/Certifications.vue'
 import AppHorizontalSpinningText from '@/components/HorizontalSpinningText.vue'
-import resumePdf from '@/assets/resume.pdf';
 
 export default {
   components: {
@@ -100,7 +99,7 @@ export default {
     return {
       letters: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
       interval: null,
-      resume: resumePdf,
+      // resume: resumePdf,
       showInstoried: false,
       showCSuite: false,
       designation: "FRONTENDDEVELOPER",
