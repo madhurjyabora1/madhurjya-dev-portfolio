@@ -85,6 +85,8 @@ import AppProject from '@/components/Project.vue'
 import AppSkills from '@/components/Skills.vue'
 import AppCertifications from '@/components/Certifications.vue'
 import AppHorizontalSpinningText from '@/components/HorizontalSpinningText.vue'
+import resumePdf from '@/assets/resume.pdf';
+
 export default {
   components: {
     AppProfilePic,
@@ -98,7 +100,7 @@ export default {
     return {
       letters: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
       interval: null,
-      resume: 'http://res.cloudinary.com/dq0ah9hmq/image/upload/v1702218773/omljvqd6woygihx9l6kq.pdf',
+      resume: resumePdf,
       showInstoried: false,
       showCSuite: false,
       designation: "FRONTENDDEVELOPER",
