@@ -22,9 +22,9 @@
         </v-col>
         <v-spacer></v-spacer>
         <v-col class="" cols="12" sm="12" md="6">
-          <div class="d-sm-flex d-md-none justify-start"><v-btn depressed href="/resume.pdf" target="_blank"
+          <div class="d-sm-flex d-md-none justify-start"><v-btn depressed href="/madhurjya-bora-resume.pdf" target="_blank"
               rel="noopener noreferrer">Resume</v-btn></div>
-          <div class="d-none d-md-flex  my-7 justify-end"><v-btn depressed href="/resume.pdf" target="_blank"
+          <div class="d-none d-md-flex  my-7 justify-end"><v-btn depressed href="/madhurjya-bora-resume.pdf" target="_blank"
               rel="noopener noreferrer">Resume</v-btn></div>
         </v-col>
         <!-- </div> -->
