@@ -59,10 +59,22 @@
               <div class="metric"><span class="metric-n">4</span><span class="metric-l mono">platforms, owned end-to-end</span></div>
             </div>
             <div class="store-tiles" aria-label="Storefront screenshots">
-              <figure class="store-tile"><image-slot id="store-1" src="/stores/crochika.webp" fit="cover" shape="rounded" radius="2" placeholder="Storefront screenshot"></image-slot><figcaption class="mono">crochika.com — live</figcaption></figure>
-              <figure class="store-tile"><image-slot id="store-2" src="/stores/konpkay.webp" fit="cover" shape="rounded" radius="2" placeholder="Storefront screenshot"></image-slot><figcaption class="mono">konpkay.com — live</figcaption></figure>
-              <figure class="store-tile"><image-slot id="store-3" src="/stores/mfsstore.webp" fit="cover" shape="rounded" radius="2" placeholder="Storefront screenshot"></image-slot><figcaption class="mono">mfsstore.in — live</figcaption></figure>
-              <figure class="store-tile"><image-slot id="store-4" src="/stores/ubersam14store.webp" fit="cover" shape="rounded" radius="2" placeholder="Storefront screenshot"></image-slot><figcaption class="mono">ubersam14store.com — live</figcaption></figure>
+              <figure class="store-tile">
+                <a class="store-link" href="https://konpkay.com" target="_blank" rel="noopener noreferrer" aria-label="Visit konpkay.com (opens in a new tab)"><image-slot id="store-1" src="/stores/konpkay.webp" fit="cover" shape="rounded" radius="2" placeholder="Storefront screenshot"></image-slot></a>
+                <figcaption class="mono"><a href="https://konpkay.com" target="_blank" rel="noopener noreferrer">konpkay.com<span aria-hidden="true">&nbsp;↗</span></a></figcaption>
+              </figure>
+              <figure class="store-tile">
+                <a class="store-link" href="https://ubersam14store.com" target="_blank" rel="noopener noreferrer" aria-label="Visit ubersam14store.com (opens in a new tab)"><image-slot id="store-2" src="/stores/ubersam14store.webp" fit="cover" shape="rounded" radius="2" placeholder="Storefront screenshot"></image-slot></a>
+                <figcaption class="mono"><a href="https://ubersam14store.com" target="_blank" rel="noopener noreferrer">ubersam14store.com<span aria-hidden="true">&nbsp;↗</span></a></figcaption>
+              </figure>
+              <figure class="store-tile">
+                <a class="store-link" href="https://crochika.com" target="_blank" rel="noopener noreferrer" aria-label="Visit crochika.com (opens in a new tab)"><image-slot id="store-3" src="/stores/crochika.webp" fit="cover" shape="rounded" radius="2" placeholder="Storefront screenshot"></image-slot></a>
+                <figcaption class="mono"><a href="https://crochika.com" target="_blank" rel="noopener noreferrer">crochika.com<span aria-hidden="true">&nbsp;↗</span></a></figcaption>
+              </figure>
+              <figure class="store-tile">
+                <a class="store-link" href="https://mfsstore.in" target="_blank" rel="noopener noreferrer" aria-label="Visit mfsstore.in (opens in a new tab)"><image-slot id="store-4" src="/stores/mfsstore.webp" fit="cover" shape="rounded" radius="2" placeholder="Storefront screenshot"></image-slot></a>
+                <figcaption class="mono"><a href="https://mfsstore.in" target="_blank" rel="noopener noreferrer">mfsstore.in<span aria-hidden="true">&nbsp;↗</span></a></figcaption>
+              </figure>
             </div>
             <ul class="case-points">
               <li><h4>Payments without a safety net</h4><p>Secure payment systems integrating multiple gateways, QR payments, transaction monitoring, and reconciliation — designed, built, and operated end-to-end.</p></li>
