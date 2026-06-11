@@ -1,24 +1,41 @@
-# portfolio-site
+# Madhurjya Bora — Portfolio
 
-## Project setup
+Portfolio site for Madhurjya Bora, full-stack engineer. Built with **Vue 3 + Vite**.
+
+## Stack
+
+- **Vue 3** (`<script setup>` SFCs), **Vite** build
+- **GSAP** + **ScrollTrigger** for scroll storytelling, **Lenis** for smooth scroll
+- WebGL hero canvas (raw WebGL, no library)
+- `<image-slot>` custom element for fillable portrait / storefront images
+
+## Project structure
+
 ```
-yarn install
+index.html                       Vite entry
+src/
+  main.js                        Mounts the app, loads global CSS + image-slot
+  App.vue                        Layout + boots page interactions
+  styles/portfolio-v2.css        Styles (cyberpunk theme)
+  components/                    Section SFCs (Hero, Profile, Work, …)
+  composables/
+    usePortfolioFx.js            GSAP/Lenis interactions (init + cleanup)
+    useHeroCanvas.js             WebGL hero background
+  webcomponents/image-slot.js    <image-slot> custom element
+public/madhurjya-bora-resume.pdf  Resume (served at site root)
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
+## Develop
+
+```bash
+pnpm install
+pnpm dev        # local dev server
+pnpm build      # production build -> dist/
+pnpm preview    # preview the production build
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## Images
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+The portrait and storefront tiles use `<image-slot>` placeholders. Add real
+images by setting a `src` attribute on the relevant `<image-slot>` in the
+`components/` SFCs.
