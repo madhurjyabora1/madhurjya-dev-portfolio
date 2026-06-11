@@ -6,6 +6,6 @@
       <a href="#work">Work</a>
       <a href="#capabilities">Capabilities</a>
     </nav>
-    <a class="nav-cta mono" href="#contact"><span class="dot" aria-hidden="true"></span>Available — let's talk</a>
+    <a class="nav-cta mono" href="#contact"><span class="dot" aria-hidden="true"></span>Available, let's talk</a>
   </header>
 </template>

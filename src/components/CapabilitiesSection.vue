@@ -17,8 +17,8 @@
       <div class="credentials">
         <h3 class="cred-label mono">Credentials</h3>
         <div class="cred-items">
-          <p><strong>FinOps Certified Practitioner</strong> — FinOps Foundation</p>
-          <p><strong>B.Tech, Computer Science &amp; Engineering</strong> — Assam University</p>
+          <p><strong>FinOps Certified Practitioner</strong> · FinOps Foundation</p>
+          <p><strong>B.Tech, Computer Science &amp; Engineering</strong> · Assam University</p>
         </div>
       </div>
     </div>

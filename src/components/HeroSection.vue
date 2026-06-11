@@ -18,12 +18,12 @@ onBeforeUnmount(() => {
   <section class="hero" id="hero" data-screen-label="Hero">
     <canvas class="hero-canvas" id="heroCanvas" ref="canvas" aria-hidden="true"></canvas>
     <div class="hero-content container">
-      <p class="hero-eyebrow mono">Madhurjya Bora — Full-Stack Engineer · TypeScript / Node.js / Vue</p>
+      <p class="hero-eyebrow mono">Madhurjya Bora · Full-Stack Engineer · TypeScript / Node.js / Vue</p>
       <h1 class="hero-title">
         <span class="ht-line">Software that</span>
         <span class="ht-line"><em>earns its keep.</em></span>
       </h1>
-      <p class="hero-sub">Six years of end-to-end ownership across SaaS, social platforms, and commerce — production systems serving 50,000+ users, built remote-first from Guwahati, India.</p>
+      <p class="hero-sub">Six years of end-to-end ownership across SaaS, social platforms, and commerce. Production systems serving 50,000+ users, built remote-first from Guwahati, India.</p>
       <div class="hero-ctas">
         <a class="btn btn-solid magnetic" href="#work">View the work</a>
         <a class="btn btn-ghost magnetic" href="#contact">Get in touch</a>

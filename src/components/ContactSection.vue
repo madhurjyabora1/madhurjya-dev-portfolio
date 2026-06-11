@@ -3,10 +3,10 @@
     <div class="container">
       <header class="sec-head">
         <span class="sec-no mono">04</span>
-        <h2 class="sec-label mono">Contact — open to senior roles &amp; select client work</h2>
+        <h2 class="sec-label mono">Contact · open to senior roles &amp; select client work</h2>
       </header>
       <p class="contact-title">Let's build something <em>real.</em></p>
-      <p class="contact-sub">Tell me about the product you need built — or kept alive.</p>
+      <p class="contact-sub">Tell me about the product you need built, or kept alive.</p>
       <div class="contact-cta">
         <a class="btn btn-solid btn-lg magnetic" href="mailto:mrbora10@gmail.com">mrbora10@gmail.com</a>
       </div>
