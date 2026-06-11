@@ -59,10 +59,10 @@
               <div class="metric"><span class="metric-n">4</span><span class="metric-l mono">platforms, owned end-to-end</span></div>
             </div>
             <div class="store-tiles" aria-label="Storefront screenshots">
-              <figure class="store-tile"><image-slot id="store-1" shape="rounded" radius="2" placeholder="Storefront screenshot"></image-slot><figcaption class="mono">Storefront 01 — live since 2021</figcaption></figure>
-              <figure class="store-tile"><image-slot id="store-2" shape="rounded" radius="2" placeholder="Storefront screenshot"></image-slot><figcaption class="mono">Storefront 02 — live</figcaption></figure>
-              <figure class="store-tile"><image-slot id="store-3" shape="rounded" radius="2" placeholder="Storefront screenshot"></image-slot><figcaption class="mono">Storefront 03 — live</figcaption></figure>
-              <figure class="store-tile"><image-slot id="store-4" shape="rounded" radius="2" placeholder="Storefront screenshot"></image-slot><figcaption class="mono">Storefront 04 — live</figcaption></figure>
+              <figure class="store-tile"><image-slot id="store-1" src="/stores/crochika.webp" fit="cover" shape="rounded" radius="2" placeholder="Storefront screenshot"></image-slot><figcaption class="mono">crochika.com — live</figcaption></figure>
+              <figure class="store-tile"><image-slot id="store-2" src="/stores/konpkay.webp" fit="cover" shape="rounded" radius="2" placeholder="Storefront screenshot"></image-slot><figcaption class="mono">konpkay.com — live</figcaption></figure>
+              <figure class="store-tile"><image-slot id="store-3" src="/stores/mfsstore.webp" fit="cover" shape="rounded" radius="2" placeholder="Storefront screenshot"></image-slot><figcaption class="mono">mfsstore.in — live</figcaption></figure>
+              <figure class="store-tile"><image-slot id="store-4" src="/stores/ubersam14store.webp" fit="cover" shape="rounded" radius="2" placeholder="Storefront screenshot"></image-slot><figcaption class="mono">ubersam14store.com — live</figcaption></figure>
             </div>
             <ul class="case-points">
               <li><h4>Payments without a safety net</h4><p>Secure payment systems integrating multiple gateways, QR payments, transaction monitoring, and reconciliation — designed, built, and operated end-to-end.</p></li>
