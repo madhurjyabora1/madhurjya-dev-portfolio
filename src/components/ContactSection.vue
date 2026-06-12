@@ -9,6 +9,7 @@
       <p class="contact-sub">Tell me about the product you need built, or kept alive.</p>
       <div class="contact-cta">
         <a class="btn btn-solid btn-lg magnetic" href="mailto:mrbora10@gmail.com">mrbora10@gmail.com</a>
+        <a class="btn btn-ghost btn-lg magnetic" href="/madhurjya-bora-resume.pdf" download>Download résumé<span aria-hidden="true">&nbsp;↓</span></a>
       </div>
       <ul class="contact-links">
         <li><a class="clink" href="https://www.linkedin.com/in/madhurjya-bora/" target="_blank" rel="noopener noreferrer">LinkedIn<span aria-hidden="true">&nbsp;↗</span></a></li>

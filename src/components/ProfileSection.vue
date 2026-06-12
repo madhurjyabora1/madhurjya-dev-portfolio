@@ -7,7 +7,7 @@
       </header>
       <div class="about-grid">
         <figure class="about-portrait">
-          <image-slot id="portrait" shape="rounded" radius="2" placeholder="Drop a portrait"></image-slot>
+          <image-slot id="portrait" shape="rounded" radius="2" src="/portrait.jpg" placeholder="Drop a portrait"></image-slot>
           <figcaption class="mono">Guwahati, IN · 26.14° N, 91.73° E</figcaption>
         </figure>
         <div class="about-copy">

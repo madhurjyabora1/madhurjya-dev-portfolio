@@ -522,7 +522,7 @@ body.is-loaded .preloader { display: none; }
   text-wrap: pretty;
 }
 .contact-sub { color: var(--ink-dim); font-size: clamp(16px, 1.6vw, 21px); margin-bottom: clamp(36px, 5vw, 64px); }
-.contact-cta { margin-bottom: clamp(36px, 5vw, 64px); }
+.contact-cta { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: clamp(36px, 5vw, 64px); }
 .contact-links { display: flex; flex-wrap: wrap; gap: 12px 36px; margin-bottom: 28px; }
 .clink {
   font-family: var(--font-mono);
