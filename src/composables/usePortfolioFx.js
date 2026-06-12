@@ -31,7 +31,7 @@ export function initPortfolioFx() {
   }
 
   /* ---------- Anchor navigation ---------- */
-  document.querySelectorAll('a[href^="#"]').forEach((a) => {
+  for (const a of document.querySelectorAll('a[href^="#"]')) {
     on(a, 'click', (e) => {
       const id = a.getAttribute('href')
       if (id.length < 2) return
@@ -45,18 +45,18 @@ export function initPortfolioFx() {
         window.scrollTo({ top, behavior: prefersReduced ? 'auto' : 'smooth' })
       }
     })
-  })
+  }
 
   /* ---------- Counters (always run; instant under reduced motion) ---------- */
   function formatCount(v, suffix) {
     return Math.round(v).toLocaleString('en-US') + (suffix || '')
   }
-  document.querySelectorAll('[data-count]').forEach((el) => {
+  for (const el of document.querySelectorAll('[data-count]')) {
     const end = parseFloat(el.dataset.count)
     const suffix = el.dataset.suffix || ''
     if (prefersReduced) {
       el.textContent = formatCount(end, suffix)
-      return
+      continue
     }
     el.textContent = formatCount(0, suffix)
     ScrollTrigger.create({
@@ -75,7 +75,7 @@ export function initPortfolioFx() {
         })
       },
     })
-  })
+  }
 
   /* ---------- Reduced motion: show everything, done ---------- */
   if (prefersReduced) {
@@ -91,30 +91,30 @@ export function initPortfolioFx() {
   function splitLines(el) {
     const nodes = Array.prototype.slice.call(el.childNodes)
     el.textContent = ''
-    nodes.forEach((node) => {
+    for (const node of nodes) {
       if (node.nodeType === 3) {
-        node.textContent.split(/(\s+)/).forEach((part) => {
-          if (!part) return
+        for (const part of node.textContent.split(/(\s+)/)) {
+          if (!part) continue
           if (/^\s+$/.test(part)) {
             el.appendChild(document.createTextNode(' '))
-            return
+            continue
           }
           const w = document.createElement('span')
           w.className = 'w'
           w.style.display = 'inline-block'
           w.textContent = part
           el.appendChild(w)
-        })
+        }
       } else {
         el.appendChild(node)
       }
-    })
+    }
     const words = Array.prototype.slice.call(el.querySelectorAll('.w'))
     if (!words.length) return [el]
     const lines = []
     let current = null
     let lastTop = null
-    words.forEach((w) => {
+    for (const w of words) {
       const top = w.offsetTop
       if (top !== lastTop) {
         current = []
@@ -122,7 +122,7 @@ export function initPortfolioFx() {
         lastTop = top
       }
       current.push(w)
-    })
+    }
     return lines.map((lineWords) => {
       const line = document.createElement('span')
       line.className = 'line'
@@ -130,10 +130,10 @@ export function initPortfolioFx() {
       inner.className = 'line-inner'
       line.appendChild(inner)
       lineWords[0].parentNode.insertBefore(line, lineWords[0])
-      lineWords.forEach((w, i) => {
+      for (const [i, w] of lineWords.entries()) {
         inner.appendChild(w)
         if (i < lineWords.length - 1) inner.appendChild(document.createTextNode(' '))
-      })
+      }
       return inner
     })
   }
@@ -142,14 +142,14 @@ export function initPortfolioFx() {
   function intro() {
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
     const heroLines = []
-    document.querySelectorAll('.ht-line').forEach((l) => {
+    for (const l of document.querySelectorAll('.ht-line')) {
       l.classList.add('line')
       const inner = document.createElement('span')
       inner.className = 'line-inner'
       while (l.firstChild) inner.appendChild(l.firstChild)
       l.appendChild(inner)
       heroLines.push(inner)
-    })
+    }
 
     tl.from('.pre-name', { yPercent: 60, opacity: 0, duration: 0.7 })
       .from('.pre-role', { opacity: 0, duration: 0.4 }, '-=0.3')
@@ -169,14 +169,14 @@ export function initPortfolioFx() {
       .from('.hero-foot', { opacity: 0, y: 10, duration: 0.6 }, '-=0.4')
       .from('.site-nav', { opacity: 0, y: -12, duration: 0.6, clearProps: 'all' }, '-=0.6')
       .add(() => {
-        document.querySelectorAll('.hero-title .line').forEach((l) => l.classList.add('line-open'))
+        for (const l of document.querySelectorAll('.hero-title .line')) l.classList.add('line-open')
       })
     return tl
   }
 
   /* ---------- Scroll storytelling ---------- */
   function scrollAnims() {
-    document.querySelectorAll('.sec-head').forEach((h) => {
+    for (const h of document.querySelectorAll('.sec-head')) {
       gsap.from(h, {
         opacity: 0,
         y: 18,
@@ -184,15 +184,15 @@ export function initPortfolioFx() {
         ease: 'power3.out',
         scrollTrigger: { trigger: h, start: 'top 86%' },
       })
-    })
+    }
 
-    document.querySelectorAll('.mline').forEach((line) => {
+    for (const line of document.querySelectorAll('.mline')) {
       gsap.to(line, {
         opacity: 1,
         ease: 'none',
         scrollTrigger: { trigger: line, start: 'top 82%', end: 'top 45%', scrub: 0.4 },
       })
-    })
+    }
 
     const rises = [
       '.about-portrait', '.about-copy p', '.about-stats li',
@@ -200,8 +200,8 @@ export function initPortfolioFx() {
       '.store-tiles .store-tile', '.cap-row', '.credentials',
       '.contact-sub', '.contact-cta', '.contact-links', '.contact-meta',
     ]
-    rises.forEach((sel) => {
-      document.querySelectorAll(sel).forEach((el) => {
+    for (const sel of rises) {
+      for (const el of document.querySelectorAll(sel)) {
         gsap.from(el, {
           opacity: 0,
           y: 26,
@@ -209,10 +209,10 @@ export function initPortfolioFx() {
           ease: 'power3.out',
           scrollTrigger: { trigger: el, start: 'top 90%' },
         })
-      })
-    })
+      }
+    }
 
-    document.querySelectorAll('.case-title, .contact-title').forEach((t) => {
+    for (const t of document.querySelectorAll('.case-title, .contact-title')) {
       const inners = splitLines(t)
       gsap.from(inners, {
         yPercent: 112,
@@ -221,21 +221,21 @@ export function initPortfolioFx() {
         ease: 'power4.out',
         scrollTrigger: { trigger: t, start: 'top 84%' },
         onComplete: () => {
-          t.querySelectorAll('.line').forEach((l) => l.classList.add('line-open'))
+          for (const l of t.querySelectorAll('.line')) l.classList.add('line-open')
         },
       })
-    })
+    }
 
-    document.querySelectorAll('.case-meta').forEach((m) => {
+    for (const m of document.querySelectorAll('.case-meta')) {
       gsap.from(m, {
         opacity: 0,
         duration: 0.9,
         ease: 'power2.out',
         scrollTrigger: { trigger: m, start: 'top 88%' },
       })
-    })
+    }
 
-    document.querySelectorAll('.case-ghost').forEach((g) => {
+    for (const g of document.querySelectorAll('.case-ghost')) {
       gsap.fromTo(
         g,
         { yPercent: 18 },
@@ -245,7 +245,7 @@ export function initPortfolioFx() {
           scrollTrigger: { trigger: g.parentElement, start: 'top bottom', end: 'bottom top', scrub: true },
         }
       )
-    })
+    }
 
     gsap.to('.hero-content', {
       yPercent: -8,
@@ -272,7 +272,7 @@ export function initPortfolioFx() {
   /* ---------- Magnetic buttons ---------- */
   function magnetic() {
     if (!window.matchMedia('(pointer: fine)').matches) return
-    document.querySelectorAll('.magnetic').forEach((btn) => {
+    for (const btn of document.querySelectorAll('.magnetic')) {
       const xTo = gsap.quickTo(btn, 'x', { duration: 0.4, ease: 'power3.out' })
       const yTo = gsap.quickTo(btn, 'y', { duration: 0.4, ease: 'power3.out' })
       on(btn, 'pointermove', (e) => {
@@ -284,7 +284,7 @@ export function initPortfolioFx() {
         xTo(0)
         yTo(0)
       })
-    })
+    }
   }
 
   /* ---------- Cursor dot ---------- */
@@ -335,9 +335,9 @@ export function initPortfolioFx() {
 
   /* ---------- Teardown ---------- */
   function destroy() {
-    cleanups.forEach((fn) => fn())
+    for (const fn of cleanups) fn()
     cleanups.length = 0
-    ScrollTrigger.getAll().forEach((t) => t.kill())
+    for (const t of ScrollTrigger.getAll()) t.kill()
     if (tickerFn) gsap.ticker.remove(tickerFn)
     if (lenis) lenis.destroy()
   }
