@@ -5,7 +5,7 @@
       <a href="#about">Profile</a>
       <a href="#work">Work</a>
       <a href="#capabilities">Capabilities</a>
-      <a href="/madhurjya-bora-resume.pdf" download>Résumé</a>
+      <a href="/madhurjya-bora-resume.pdf" download>Resume</a>
     </nav>
     <a class="nav-cta mono" href="#contact"><span class="dot" aria-hidden="true"></span>Available, let's talk</a>
   </header>
